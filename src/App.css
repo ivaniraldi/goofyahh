@@ -5,8 +5,8 @@ body{
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: #000;
 }
-/* src/GuitarHero.css */
 .game-area {
   position: relative;
   width: 100%;
@@ -41,7 +41,7 @@ body{
   color: #fff;
   height: 35px;
   font-size: 24px;
-  background-color: #ffffff27;
+  background-color: #ffffff1a;
   border: 1px solid black;
 }
 
@@ -57,4 +57,77 @@ body{
 .missed {
   left: auto;
   right: 10px;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.buttongh {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+
+/* snake game */
+.game-area2 {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: #121111;
+  border: 2px solid violet;
+  
+}
+
+.snake-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: #00FF00;
+  border-radius: 2px;
+}
+
+.food-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: red;
+  border-radius: 2px;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.game-over h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.game-over button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.snake-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
 }
