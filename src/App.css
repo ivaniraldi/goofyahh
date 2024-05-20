@@ -1,0 +1,60 @@
+.home_container{
+  background-color: #7ABBCC;
+}
+body{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* src/GuitarHero.css */
+.game-area {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #000000;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  border-radius: 15px;
+}
+
+.note {
+  position: absolute;
+  width: 25%;
+  height: 20px;
+  background-color: #D7A508;
+  transition: top 0.05s linear;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.lanes {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lane {
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  height: 35px;
+  font-size: 24px;
+  background-color: #ffffff27;
+  border: 1px solid black;
+}
+
+.score, .missed {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.missed {
+  left: auto;
+  right: 10px;
+}
